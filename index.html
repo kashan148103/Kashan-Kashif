@@ -901,26 +901,6 @@
     </div>
 </header>
 <style>
- :root {
-    --bg-color: #000000;
-    --text-color: #ffffff;
-    --heading-color: #84ff00;
-    --card-bg: #0a0a0a;
-    --border-color: #1a1a1a;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 /* Header Container */
 .header {
     position: fixed;
@@ -1296,19 +1276,6 @@ navbar.querySelectorAll('.nav-links a').forEach(link => {
 
 
 <style>
-
-/* =========================================================
-   ROOT
-========================================================= */
-
-:root {
-    --bg-color: #000000;
-    --text-color: #ffffff;
-    --heading-color: #84ff00;
-    --card-bg: #0a0a0a;
-    --border-color: #1a1a1a;
-}
-
 
 /* =========================================================
    HERO BASE
@@ -3611,107 +3578,361 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 }
 </style>
-    <section id="portfolio" class="portfolio">
-        <div class="portfolio-header-container">
-            <div>
-                <div class="section-header"><span></span> My Portfolio</div>
-                <h2 style="font-size: clamp(2.5rem, 4vw, 3.5rem);">Selected Work <br><span style="color:var(--heading-color)">Built to Perform.</span></h2>
+<section id="portfolio" class="portfolio-section">
+    <div class="portfolio-container">
+        
+        <div class="portfolio-header">
+            <div class="section-badge">
+                <span class="badge-line"></span> My Creative Works <span class="badge-line"></span>
+            </div>
+            <h2>Selected Work <br><span style="color:#4c961b;">Built to Perform.</span></h2>
+            
+            <div class="portfolio-filter-btns">
+                <button class="filter-btn active" data-filter="all">All </button>
+                <button class="filter-btn" data-filter="marketing">Digital Marketing </button>
+                <button class="filter-btn" data-filter="thumbnail">Thumbnails </button>
+                <button class="filter-btn" data-filter="product">Product Post Designs</button>
             </div>
         </div>
-        <div class="portfolio-grid">
-            <div class="portfolio-card">
-                <div class="portfolio-img-box">
-                    <span class="portfolio-tag">Branding</span>
-                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="Project 1">
-                    <div class="portfolio-hover-overlay"><a href="https://www.behance.net/kashan-kashif" target="_blank" class="portfolio-view-circle"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-                </div>
-                <div class="portfolio-content">
-                    <h3>North Edge Visual Identity</h3>
-                    <p>Comprehensive design system focused on modern digital experiences and visual depth.</p>
-                    <div class="portfolio-footer-row">
-                        <span>Branding</span>
-                        <a href="https://www.behance.net/kashan-kashif" target="_blank">View Project <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-card dark-card">
-                <div class="portfolio-img-box">
-                    <span class="portfolio-tag">Campaign</span>
-                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Project 2">
-                    <div class="portfolio-hover-overlay"><a href="https://www.behance.net/kashan-kashif" target="_blank" class="portfolio-view-circle"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-                </div>
-                <div class="portfolio-content">
-                    <h3>Wildhorn Product Launch</h3>
-                    <p>High-impact promotional campaign creatives and digital marketing posters.</p>
-                    <div class="portfolio-footer-row">
-                        <span>Campaign</span>
-                        <a href="https://www.behance.net/kashan-kashif" target="_blank">View Project <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-card">
-                <div class="portfolio-img-box">
-                    <span class="portfolio-tag">Social Media</span>
-                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" alt="Project 3">
-                    <div class="portfolio-hover-overlay"><a href="https://www.behance.net/kashan-kashif" target="_blank" class="portfolio-view-circle"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-                </div>
-                <div class="portfolio-content">
-                    <h3>Gymferno Fitness Posters</h3>
-                    <p>Dynamic fitness branding and high-energy workout promotional visuals.</p>
-                    <div class="portfolio-footer-row">
-                        <span>Post Design</span>
-                        <a href="https://www.behance.net/kashan-kashif" target="_blank">View Project <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-card">
-                <div class="portfolio-img-box">
-                    <span class="portfolio-tag">Digital Art</span>
-                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80" alt="Project 4">
-                    <div class="portfolio-hover-overlay"><a href="https://www.behance.net/kashan-kashif" target="_blank" class="portfolio-view-circle"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-                </div>
-                <div class="portfolio-content">
-                    <h3>Kion Digital Experience</h3>
-                    <p>Futuristic UI layouts and promotional banner design systems.</p>
-                    <div class="portfolio-footer-row">
-                        <span>Digital Art</span>
-                        <a href="https://www.behance.net/kashan-kashif" target="_blank">View Project <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-card dark-card">
-                <div class="portfolio-img-box">
-                    <span class="portfolio-tag">Manipulation</span>
-                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=600&q=80" alt="Project 5">
-                    <div class="portfolio-hover-overlay"><a href="https://www.behance.net/kashan-kashif" target="_blank" class="portfolio-view-circle"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-                </div>
-                <div class="portfolio-content">
-                    <h3>Surreal Composites</h3>
-                    <p>Advanced Photoshop photo manipulation and conceptual visual storytelling.</p>
-                    <div class="portfolio-footer-row">
-                        <span>Manipulation</span>
-                        <a href="https://www.behance.net/kashan-kashif" target="_blank">View Project <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-card">
-                <div class="portfolio-img-box">
-                    <span class="portfolio-tag">Typography</span>
-                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80" alt="Project 6">
-                    <div class="portfolio-hover-overlay"><a href="https://www.behance.net/kashan-kashif" target="_blank" class="portfolio-view-circle"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-                </div>
-                <div class="portfolio-content">
-                    <h3>Kinetic Lettering</h3>
-                    <p>Custom typography posters and brand typography guidelines.</p>
-                    <div class="portfolio-footer-row">
-                        <span>Typography</span>
-                        <a href="https://www.behance.net/kashan-kashif" target="_blank">View Project <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
+        <div class="portfolio-grid">
+
+            <div class="portfolio-card" data-category="marketing">
+                <div class="portfolio-img-box">
+                    <img src="1.jpeg" alt="Marketing 1">
+                </div>
+                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+            </div>
+            <div class="portfolio-card" data-category="marketing">
+                <div class="portfolio-img-box">
+                    <img src="2.jpeg" alt="Marketing 2">
+                </div>
+                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+            </div>
+            <div class="portfolio-card" data-category="marketing">
+                <div class="portfolio-img-box">
+                    <img src="3.jpeg" alt="Marketing 3">
+                </div>
+                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+            </div>
+            <div class="portfolio-card" data-category="marketing">
+                <div class="portfolio-img-box">
+                    <img src="4.jpeg" alt="Marketing 4">
+                </div>
+                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+            </div>
+            <div class="portfolio-card" data-category="marketing">
+                <div class="portfolio-img-box">
+                    <img src="5.jpeg" alt="Marketing 5">
+                </div>
+                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+            </div>
+            <div class="portfolio-card" data-category="marketing">
+                <div class="portfolio-img-box">
+                    <img src="6.jpeg" alt="Marketing 6">
+                </div>
+                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+            </div>
+            <div class="portfolio-card" data-category="marketing">
+                <div class="portfolio-img-box">
+                    <img src="8.jpeg" alt="Marketing 7">
+                </div>
+                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+            </div>
+            <div class="portfolio-card" data-category="marketing">
+                <div class="portfolio-img-box">
+                    <img src="9.jpeg" alt="Marketing 8">
+                </div>
+                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+            </div>
+            <div class="portfolio-card" data-category="marketing">
+                <div class="portfolio-img-box">
+                    <img src="10.jpeg" alt="Marketing 9">
+                </div>
+                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+            </div>
+            <div class="portfolio-card" data-category="marketing">
+                <div class="portfolio-img-box">
+                    <img src="7.jpeg" alt="Marketing 10">
+                </div>
+                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+            </div>
+
+            <div class="portfolio-card" data-category="thumbnail">
+                <div class="portfolio-img-box yt-thumbnail">
+                    <img src="tm1.jpeg" alt="Thumb 1">
+                </div>
+                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+            </div>
+            <div class="portfolio-card" data-category="thumbnail">
+                <div class="portfolio-img-box yt-thumbnail">
+                    <img src="tm2.jpeg" alt="Thumb 2">
+                </div>
+                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+            </div>
+            <div class="portfolio-card" data-category="thumbnail">
+                <div class="portfolio-img-box yt-thumbnail">
+                    <img src="tm3.jpeg" alt="Thumb 3">
+                </div>
+                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+            </div>
+            <div class="portfolio-card" data-category="thumbnail">
+                <div class="portfolio-img-box yt-thumbnail">
+                    <img src="tm4.jpeg" alt="Thumb 4">
+                </div>
+                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+            </div>
+            <div class="portfolio-card" data-category="thumbnail">
+                <div class="portfolio-img-box yt-thumbnail">
+                    <img src="tm5.jpeg" alt="Thumb 5">
+                </div>
+                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+            </div>
+            <div class="portfolio-card" data-category="thumbnail">
+                <div class="portfolio-img-box yt-thumbnail">
+                    <img src="tm6.jpeg" alt="Thumb 6">
+                </div>
+                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+            </div>
+            <div class="portfolio-card" data-category="thumbnail">
+                <div class="portfolio-img-box yt-thumbnail">
+                    <img src="tm7.jpeg" alt="Thumb 7">
+                </div>
+                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+            </div>
+            <div class="portfolio-card" data-category="thumbnail">
+                <div class="portfolio-img-box yt-thumbnail">
+                    <img src="tm8.jpeg" alt="Thumb 8">
+                </div>
+                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+            </div>
+            <div class="portfolio-card" data-category="thumbnail">
+                <div class="portfolio-img-box yt-thumbnail">
+                    <img src="tm9.jpeg" alt="Thumb 9">
+                </div>
+                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+            </div>
+            <div class="portfolio-card" data-category="thumbnail">
+                <div class="portfolio-img-box yt-thumbnail">
+                    <img src="tm10.jpeg" alt="Thumb 10">
+                </div>
+                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+            </div>
+
+            <div class="portfolio-card" data-category="product">
+                <div class="portfolio-img-box">
+                    <img src="ps1.jpeg" alt="Product 1">
+                </div>
+                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+            </div>
+            <div class="portfolio-card" data-category="product">
+                <div class="portfolio-img-box">
+                    <img src="ps2.jpeg" alt="Product 2">
+                </div>
+                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+            </div>
+            <div class="portfolio-card" data-category="product">
+                <div class="portfolio-img-box">
+                    <img src="ps3.jpeg" alt="Product 3">
+                </div>
+                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+            </div>
+            <div class="portfolio-card" data-category="product">
+                <div class="portfolio-img-box">
+                    <img src="ps4.jpeg" alt="Product 4">
+                </div>
+                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+            </div>
+            <div class="portfolio-card" data-category="product">
+                <div class="portfolio-img-box">
+                    <img src="ps5.jpeg" alt="Product 5">
+                </div>
+                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+            </div>
+            <div class="portfolio-card" data-category="product">
+                <div class="portfolio-img-box">
+                    <img src="ps6.jpeg" alt="Product 6">
+                </div>
+                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+            </div>
+            <div class="portfolio-card" data-category="product">
+                <div class="portfolio-img-box">
+                    <img src="ps7.jpeg" alt="Product 7">
+                </div>
+                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+            </div>
+            <div class="portfolio-card" data-category="product">
+                <div class="portfolio-img-box">
+                    <img src="ps8.jpeg" alt="Product 8">
+                </div>
+                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+            </div>
+            <div class="portfolio-card" data-category="product">
+                <div class="portfolio-img-box">
+                    <img src="ps9.jpeg" alt="Product 9">
+                </div>
+                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+            </div>
+            <div class="portfolio-card" data-category="product">
+                <div class="portfolio-img-box">
+                    <img src="ps10.jpeg" alt="Product 10">
+                </div>
+                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+/* --- Portfolio Section Styling --- */
+.portfolio-section {
+    padding: 80px 0;
+    background-color: #000000;
+}
+
+.portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.portfolio-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio-header h2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/* Category Filter Buttons Switcher */
+.portfolio-filter-btns {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: #111111;
+    color: #94a3b8;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: #4c961b;
+    color: #ffffff;
+    border-color: #4c961b;
+}
+
+/* Grid Design */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Card Style */
+.portfolio-card {
+    background: #111111;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    border-color: #4c961b;
+}
+
+/* Default Box Ratio (4:3) for other cards */
+.portfolio-img-box {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #1a1a1a;
+}
+
+/* YouTube Thumbnail Ratio (16:9) */
+.portfolio-img-box.yt-thumbnail {
+    aspect-ratio: 16 / 9;
+}
+
+.portfolio-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Agar cut nahi chahiye toh 'contain' kar sakte hain */
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover .portfolio-img-box img {
+    transform: scale(1.05);
+}
+
+/* Small Category Footer text */
+.portfolio-mini-footer {
+    padding: 12px 15px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.portfolio-mini-footer span {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const filterBtns = document.querySelectorAll(".filter-btn");
+    const portfolioCards = document.querySelectorAll(".portfolio-card");
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener("click", function () {
+            filterBtns.forEach(b => b.classList.remove("active"));
+            this.classList.add("active");
+
+            const filterValue = this.getAttribute("data-filter");
+
+            portfolioCards.forEach(card => {
+                if (filterValue === "all" || card.getAttribute("data-category") === filterValue) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+    });
+});
+</script>    
 <section id="fresh-videos" class="fresh-video-section">
     <div class="fresh-container">
         
@@ -3724,65 +3945,38 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
 
         <div class="fresh-grid fresh-grid-row4">
-
             <div class="fresh-row fresh-row-4up">
-                <div class="fresh-video-box" data-video-src="WhatsApp Video 2026-08-28 at 4.21.04 PM.mp4">
-                    <video autoplay muted loop playsinline class="fresh-bg-video">
-                        <source src="WhatsApp Video 2026-08-28 at 4.21.04 PM.mp4" type="video/mp4">
+                
+                <div class="fresh-video-box" data-video-src="WhatsApp Video 2026-04-16 at 5.28.29 AM.mp4">
+                    <video muted loop playsinline class="fresh-bg-video">
+                        <source src="WhatsApp Video 2026-04-16 at 5.28.29 AM.mp4" type="video/mp4">
                     </video>
                     <div class="fresh-play-overlay"><i class="fa-solid fa-play"></i></div>
                 </div>
 
-                <div class="fresh-video-box" data-video-src="WhatsApp Video 2026-08-28 at 4.21.04 PM.mp4">
-                    <video autoplay muted loop playsinline class="fresh-bg-video">
-                        <source src=" video  2 (1).mp4" type="video/mp4">
+                <div class="fresh-video-box" data-video-src="1.mp4">
+                    <video muted loop playsinline class="fresh-bg-video">
+                        <source src="1.mp4" type="video/mp4">
                     </video>
                     <div class="fresh-play-overlay"><i class="fa-solid fa-play"></i></div>
                 </div>
 
-                <div class="fresh-video-box" data-video-src="WhatsApp Video 2026-08-28 at 4.21.04 PM.mp4">
-                    <video autoplay muted loop playsinline class="fresh-bg-video">
-                        <source src=" video  2 (2).mp4" type="video/mp4">
+                <div class="fresh-video-box" data-video-src="REEL 34.mp4">
+                    <video muted loop playsinline class="fresh-bg-video">
+                        <source src="REEL 34.mp4" type="video/mp4">
                     </video>
                     <div class="fresh-play-overlay"><i class="fa-solid fa-play"></i></div>
                 </div>
 
-                <div class="fresh-video-box" data-video-src="WhatsApp Video 2026-08-28 at 4.21.04 PM.mp4">
-                    <video autoplay muted loop playsinline class="fresh-bg-video">
-                        <source src=" video  2 (3).mp4" type="video/mp4">
+                <div class="fresh-video-box" data-video-src="0508123123.mp4">
+                    <video muted loop playsinline class="fresh-bg-video">
+                        <source src="0508123123.mp4" type="video/mp4">
                     </video>
                     <div class="fresh-play-overlay"><i class="fa-solid fa-play"></i></div>
                 </div>
 
-                <div class="fresh-video-box" data-video-src="WhatsApp Video 2026-08-28 at 4.21.04 PM.mp4">
-                    <video autoplay muted loop playsinline class="fresh-bg-video">
-                        <source src=" video  2 (4).mp4" type="video/mp4">
-                    </video>
-                    <div class="fresh-play-overlay"><i class="fa-solid fa-play"></i></div>
-                </div>
-
-                <div class="fresh-video-box" data-video-src="WhatsApp Video 2026-08-28 at 4.21.04 PM.mp4">
-                    <video autoplay muted loop playsinline class="fresh-bg-video">
-                        <source src=" video  2 (5).mp4" type="video/mp4">
-                    </video>
-                    <div class="fresh-play-overlay"><i class="fa-solid fa-play"></i></div>
-                </div>
-
-                <div class="fresh-video-box" data-video-src="WhatsApp Video 2026-08-28 at 4.21.04 PM.mp4">
-                    <video autoplay muted loop playsinline class="fresh-bg-video">
-                        <source src="#" type="video/mp4">
-                    </video>
-                    <div class="fresh-play-overlay"><i class="fa-solid fa-play"></i></div>
-                </div>
-
-                <div class="fresh-video-box" data-video-src="WhatsApp Video 2026-08-28 at 4.21.04 PM.mp4">
-                    <video autoplay muted loop playsinline class="fresh-bg-video">
-                        <source src="#" type="video/mp4">
-                    </video>
-                    <div class="fresh-play-overlay"><i class="fa-solid fa-play"></i></div>
-                </div>
+                
             </div>
-
         </div>
 
         <div class="fresh-video-instagram-cta">
@@ -3794,12 +3988,271 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
 </section>
 
-<!-- Fullscreen Video Popup Modal -->
-<div class="video-fullscreen-modal" id="videoFullscreenModal">
-    <button class="video-fullscreen-close" id="videoFullscreenClose">&times;</button>
-    <video id="videoFullscreenPlayer" controls autoplay playsinline></video>
+<div id="videoPopupModal" class="video-popup-modal">
+    <div class="popup-content-wrap">
+        <span class="popup-close-btn">&times;</span>
+        <video id="popupVideoPlayer" controls playsinline></video>
+    </div>
 </div>
 
+<style>
+/* --- Video Section Styling --- */
+.fresh-video-section {
+  padding: 80px 0;
+  background-color: #000000;
+}
+
+.fresh-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.fresh-title-wrap {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-badge {
+  color: #4c961b;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge-line {
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: #4c961b;
+}
+
+.fresh-title-wrap h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.fresh-title-wrap p {
+  color: #94a3b8;
+  font-size: 1.1rem;
+}
+
+.fresh-row-4up {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.fresh-video-box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #111111;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.fresh-video-box:hover {
+  transform: translateY(-5px);
+  border-color: #4c961b;
+}
+
+.fresh-bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.fresh-play-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.fresh-video-box:hover .fresh-play-overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.fresh-play-overlay i {
+  color: #ffffff;
+  font-size: 1.5rem;
+  background: #4c961b;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(76, 150, 27, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.fresh-video-box:hover .fresh-play-overlay i {
+  transform: scale(1.1);
+}
+
+.fresh-video-instagram-cta {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.fresh-insta-follow-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #4c961b;
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.fresh-insta-follow-btn:hover {
+  background: #3e7b15;
+  transform: translateY(-2px);
+}
+
+/* --- FULL BLACK POPUP MODAL STYLING --- */
+.video-popup-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+}
+
+.video-popup-modal.active {
+  display: flex;
+}
+
+.popup-content-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#popupVideoPlayer {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  outline: none;
+}
+
+.popup-close-btn {
+  position: absolute;
+  top: -45px;
+  right: 0;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 10000;
+}
+
+.popup-close-btn:hover {
+  color: #4c961b;
+}
+
+@media (max-width: 992px) {
+  .fresh-row-4up {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .fresh-row-4up {
+    grid-template-columns: 1fr;
+  }
+  .fresh-title-wrap h2 {
+    font-size: 2rem;
+  }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const videoBoxes = document.querySelectorAll(".fresh-video-box");
+  const modal = document.getElementById("videoPopupModal");
+  const popupVideo = document.getElementById("popupVideoPlayer");
+  const closeBtn = document.querySelector(".popup-close-btn");
+
+  // Check background videos for any loading errors
+  document.querySelectorAll(".fresh-bg-video").forEach(vid => {
+    vid.addEventListener("error", function(e) {
+      console.error("Video failed to load file:", vid.querySelector("source").getAttribute("src"), e);
+    });
+  });
+
+  // Open Popup and Play Video with Sound on Click
+  videoBoxes.forEach(box => {
+    box.addEventListener("click", function () {
+      const videoSrc = this.getAttribute("data-video-src");
+      if (videoSrc) {
+        popupVideo.src = videoSrc;
+        modal.classList.add("active");
+        popupVideo.muted = false; // Enable sound in popup
+        
+        let playPromise = popupVideo.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(error => {
+            console.error("Popup playback error for file:", videoSrc, error);
+          });
+        }
+      }
+    });
+  });
+
+  // Close Popup Function
+  function closePopup() {
+    modal.classList.remove("active");
+    popupVideo.pause();
+    popupVideo.currentTime = 0;
+    popupVideo.src = "";
+  }
+
+  closeBtn.addEventListener("click", closePopup);
+
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      closePopup();
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      closePopup();
+    }
+  });
+});
+</script>
 <!-- =========================================================
      PARTNERS / BRANDS LOGO SLIDER SECTION
 ========================================================= -->
@@ -3815,23 +4268,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
         <div class="partners-slider">
             <div class="partners-track">
-                <div class="partner-logo"><img src="partner-1.png" alt="Partner 1"></div>
-                <div class="partner-logo"><img src="partner-2.png" alt="Partner 2"></div>
-                <div class="partner-logo"><img src="partner-3.png" alt="Partner 3"></div>
-                <div class="partner-logo"><img src="partner-4.png" alt="Partner 4"></div>
-                <div class="partner-logo"><img src="partner-5.png" alt="Partner 5"></div>
-                <div class="partner-logo"><img src="partner-6.png" alt="Partner 6"></div>
-                <div class="partner-logo"><img src="partner-7.png" alt="Partner 7"></div>
-                <div class="partner-logo"><img src="partner-8.png" alt="Partner 8"></div>
+                <div class="partner-logo"><img src="KFC.png" alt="Partner 1"></div>
+                <div class="partner-logo"><img src="snickers_PNG13920.png" alt="Partner 2"></div>
+                <div class="partner-logo"><img src="SPECAIL SPARKS.png" alt="Partner 3"></div>
+                <div class="partner-logo"><img src="THE  SKIN.png" alt="Partner 4"></div>
+                <div class="partner-logo"><img src="Team Infinity Final Pro_Logo Source copy 2.png" alt="Partner 5"></div>
+                <div class="partner-logo"><img src="EXEEO.png" alt="Partner 6"></div>
+                <div class="partner-logo"><img src="HINO.png" alt="Partner 7"></div>
+                <div class="partner-logo"><img src="transparent-Photoroom (1).png" alt="Partner 8"></div>
                 <!-- duplicate set for seamless loop -->
-                <div class="partner-logo"><img src="partner-1.png" alt="Partner 1"></div>
-                <div class="partner-logo"><img src="partner-2.png" alt="Partner 2"></div>
-                <div class="partner-logo"><img src="partner-3.png" alt="Partner 3"></div>
-                <div class="partner-logo"><img src="partner-4.png" alt="Partner 4"></div>
-                <div class="partner-logo"><img src="partner-5.png" alt="Partner 5"></div>
-                <div class="partner-logo"><img src="partner-6.png" alt="Partner 6"></div>
-                <div class="partner-logo"><img src="partner-7.png" alt="Partner 7"></div>
-                <div class="partner-logo"><img src="partner-8.png" alt="Partner 8"></div>
+                <div class="partner-logo"><img src="KFC.png" alt="Partner 1"></div>
+                <div class="partner-logo"><img src="snickers_PNG13920.png" alt="Partner 2"></div>
+                <div class="partner-logo"><img src="SPECAIL SPARKS.png" alt="Partner 3"></div>
+                <div class="partner-logo"><img src="THE  SKIN.png" alt="Partner 4"></div>
+                <div class="partner-logo"><img src="Team Infinity Final Pro_Logo Source copy 2.png" alt="Partner 5"></div>
+                <div class="partner-logo"><img src="EXEEO.png" alt="Partner 6"></div>
+                <div class="partner-logo"><img src="HINO.png" alt="Partner 7"></div>
+                <div class="partner-logo"><img src="transparent-Photoroom (1).png" alt="Partner 8"></div>
+               
             </div>
         </div>
     </div>
@@ -3859,7 +4313,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
             </div>
             <div class="skill-bar">
-                <div class="skill-info"><span>Cap Cut Pro</span> <span>60%</span></div>
+                <div class="skill-info"><span>Cap Cat Pro</span> <span>60%</span></div>
                 <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
             </div>
             
@@ -4878,7 +5332,7 @@ window.addEventListener('scroll', () => {
     background:rgba(255,255,255,0.04) !important;
     backdrop-filter:blur(18px) saturate(140%);
     -webkit-backdrop-filter:blur(18px) saturate(140%);
-    border:1px solid rgba(255,255,255,0.14) !important;
+    border:1px solid var(--heading-color) !important;
     border-radius:16px;
     padding:2.5rem;
     box-shadow:0 8px 32px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06);
@@ -4896,7 +5350,7 @@ window.addEventListener('scroll', () => {
     background:rgba(255,255,255,0.045) !important;
     backdrop-filter:blur(20px) saturate(150%);
     -webkit-backdrop-filter:blur(20px) saturate(150%);
-    border:1px solid rgba(255,255,255,0.14) !important;
+    border:1px solid var(--heading-color) !important;
     border-radius:16px;
     box-shadow:0 8px 40px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.06);
 }
