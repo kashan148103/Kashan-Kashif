@@ -5088,6 +5088,30 @@ document.addEventListener("DOMContentLoaded", function () {
   transform: scale(1.1);
 }
 
+.vid-slide-box:hover .vid-slide-play {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.vid-slide-play i {
+  color: #ffffff;
+  font-size: 1.2rem;
+  background: #4c961b;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(76, 150, 27, 0.4);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.vid-slide-box:hover .vid-slide-play i {
+  transform: scale(1.1);
+}
+
 .fresh-video-instagram-cta {
   text-align: center;
   margin-top: 50px;
@@ -5255,6 +5279,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+    // Pause/play icon toggles that one video in place, without opening the popup
+document.querySelectorAll(".vid-slide-box").forEach(box => {
+    const media = box.querySelector(".vid-slide-media");
+    const icon = box.querySelector(".vid-slide-play i");
+    if (!media || !icon) return;
+
+    icon.addEventListener("click", function (e) {
+      e.stopPropagation();
+      if (media.paused) {
+        media.play().catch(() => {});
+        icon.classList.remove("fa-play");
+        icon.classList.add("fa-pause");
+      } else {
+        media.pause();
+        icon.classList.remove("fa-pause");
+        icon.classList.add("fa-play");
+      }
+    });
+  });
 </script>
 
 <!-- =========================================================
