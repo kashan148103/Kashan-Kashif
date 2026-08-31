@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kashan — Graphic Designer Portfolio</title>
+    <link rel="icon" type="image/png" href="logo.png" sizes="32x32">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -23,12 +24,26 @@
             box-sizing: border-box;
         }
 
+        html {
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* old Edge / IE */
+        }
+
+        html::-webkit-scrollbar,
+        body::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, new Edge */
+            width: 0;
+            height: 0;
+        }
+
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
             font-family: Inter, Poppins, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             overflow-x: hidden;
             line-height: 1.5;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* old Edge / IE */
         }
 
         h1, h2, h3, h4, .brand-title {
@@ -853,6 +868,16 @@
             .portfolio-grid {
                 grid-template-columns: 1fr;
             }
+            .hero-img-wrapper {
+                height: 380px;
+                order: -1;
+            }
+            .location-badge {
+                top: 1rem;
+                right: 1rem;
+                font-size: 0.7rem;
+                padding: 0.6rem 0.9rem;
+            }
             nav:not(.navbar) {
                 display: none;
             }
@@ -869,19 +894,26 @@
                 justify-content: center;
             }
         }
+
+        @media (max-width: 480px) {
+            .hero-img-wrapper {
+                height: 280px;
+            }
+        }
     </style>
 </head>
 <body>
 
   <header class="header" id="header">
+    <a href="#home" class="logo-link">
     <div class="logo">
         <img src="1231 (1) (1).png" alt="Kashan Logo" class="logo-img" id="logoImg">
         <span class="logo-text">KASHAN</span>
     </div>
-    
+</a>
     <nav class="navbar" id="navbar">
         <ul class="nav-links">
-            <li><a href="#home" class="active">home</a></li>
+            <li><a href="#home" >home</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#categories">categories</a></li>
             <li><a href="#portfolio">portfolio</a></li>
@@ -2552,7 +2584,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="about-tag about-animate">
                 <span class="about-tag-line"></span>
                 <span>ABOUT ME</span>
-                <small>01 / 03</small>
+               
             </div>
 
 
@@ -2626,7 +2658,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <div class="mv-header-line"></div>
 
-                <span>02 / 03</span>
+               
 
             </div>
 
@@ -3390,32 +3422,36 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="tickers-wrapper">
         <div class="slant-ticker-container ticker-top">
             <div class="ticker-track">
-                <div class="ticker-item"><span>•</span> THUMBNAIL DESIGN</div>
-                <div class="ticker-item"><span>•</span> LOGO DESIGN</div>
-                <div class="ticker-item"><span>•</span> PRODUCT POST DESIGN </div>
-                <div class="ticker-item"><span>•</span> DIGITAL MARKETING POST DESIGN </div>
-                <div class="ticker-item"><span>•</span> BANNER DESIGN </div>
+                <div class="ticker-item"><span>•</span> THUMBNAIL DESIGNS</div>
+                <div class="ticker-item"><span>•</span> LOGO DESIGNS</div>
+                <div class="ticker-item"><span>•</span> PRODUCT POST DESIGNS </div>
+                <div class="ticker-item"><span>•</span> DIGITAL MARKETING POST DESIGNS </div>
+                <div class="ticker-item"><span>•</span> BANNER DESIGNS </div>
                 <div class="ticker-item"><span>•</span> PHOTO MANIPULATION </div>
                 <div class="ticker-item"><span>•</span> BRANDING </div>
-                <div class="ticker-item"><span>•</span> BUSSINSS CARD DESIGN</div>
-                <div class="ticker-item"><span>•</span> Typography design</div>
-                <div class="ticker-item"><span>•</span> GYM POST DESIGN</div>
+                <div class="ticker-item"><span>•</span> BUSSINSS CARD DESIGNS</div>
+                <div class="ticker-item"><span>•</span> TYPOGRAPHY DESGINS </div>
+                <div class="ticker-item"><span>•</span> GYM POST DESIGNS</div>
+                <div class="ticker-item"><span>•</span> EDUCATION POST DESIGNS</div>
+                
                 
             </div>
         </div>
 
         <div class="slant-ticker-container ticker-bottom">
             <div class="ticker-track ticker-track-rev">
-                 <div class="ticker-item"><span>•</span> THUMBNAIL DESIGN</div>
-                <div class="ticker-item"><span>•</span> LOGO DESIGN</div>
-                <div class="ticker-item"><span>•</span> PRODUCT POST DESIGN </div>
-                <div class="ticker-item"><span>•</span> DIGITAL MARKETING POST DESIGN </div>
-                <div class="ticker-item"><span>•</span> BANNER DESIGN </div>
+                <div class="ticker-item"><span>•</span> THUMBNAIL DESIGNS</div>
+                <div class="ticker-item"><span>•</span> LOGO DESIGNS</div>
+                <div class="ticker-item"><span>•</span> PRODUCT POST DESIGNS </div>
+                <div class="ticker-item"><span>•</span> DIGITAL MARKETING POST DESIGNS </div>
+                <div class="ticker-item"><span>•</span> BANNER DESIGNS </div>
                 <div class="ticker-item"><span>•</span> PHOTO MANIPULATION </div>
                 <div class="ticker-item"><span>•</span> BRANDING </div>
-                <div class="ticker-item"><span>•</span> BUSSINSS CARD DESIGN</div>
-                <div class="ticker-item"><span>•</span> Typography design</div>
-                <div class="ticker-item"><span>•</span> GYM POST DESIGN</div>
+                <div class="ticker-item"><span>•</span> BUSSINSS CARD DESIGNS</div>
+                <div class="ticker-item"><span>•</span> TYPOGRAPHY DESGINS </div>
+                <div class="ticker-item"><span>•</span> GYM POST DESIGNS</div>
+                <div class="ticker-item"><span>•</span> EDUCATION POST DESIGNS</div>
+               
             </div>
         </div>
     </div>
@@ -3580,209 +3616,919 @@ document.addEventListener("DOMContentLoaded", function () {
 </style>
 <section id="portfolio" class="portfolio-section">
     <div class="portfolio-container">
-        
-        <div class="portfolio-header">
-            <div class="section-badge">
-                <span class="badge-line"></span> My Creative Works <span class="badge-line"></span>
-            </div>
-            <h2>Selected Work <br><span style="color:#4c961b;">Built to Perform.</span></h2>
+
+     <div class="portfolio-header">
+    <div class="categories-container">
+        <div class="section-header-wrapper">
             
-            <div class="portfolio-filter-btns">
-                <button class="filter-btn active" data-filter="all">All </button>
-                <button class="filter-btn" data-filter="marketing">Digital Marketing </button>
-                <button class="filter-btn" data-filter="thumbnail">Thumbnails </button>
-                <button class="filter-btn" data-filter="product">Product Post Designs</button>
+        
+     </div>
+       <div class="fresh-title-wrap">
+            <div class="section-badge">
+                <span class="badge-line"></span> Selected WorkMy Creative Works<span class="badge-line"></span>
             </div>
-        </div>
-
-        <div class="portfolio-grid">
-
-            <div class="portfolio-card" data-category="marketing">
-                <div class="portfolio-img-box">
-                    <img src="1.jpeg" alt="Marketing 1">
-                </div>
-                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
-            </div>
-            <div class="portfolio-card" data-category="marketing">
-                <div class="portfolio-img-box">
-                    <img src="2.jpeg" alt="Marketing 2">
-                </div>
-                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
-            </div>
-            <div class="portfolio-card" data-category="marketing">
-                <div class="portfolio-img-box">
-                    <img src="3.jpeg" alt="Marketing 3">
-                </div>
-                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
-            </div>
-            <div class="portfolio-card" data-category="marketing">
-                <div class="portfolio-img-box">
-                    <img src="4.jpeg" alt="Marketing 4">
-                </div>
-                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
-            </div>
-            <div class="portfolio-card" data-category="marketing">
-                <div class="portfolio-img-box">
-                    <img src="5.jpeg" alt="Marketing 5">
-                </div>
-                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
-            </div>
-            <div class="portfolio-card" data-category="marketing">
-                <div class="portfolio-img-box">
-                    <img src="6.jpeg" alt="Marketing 6">
-                </div>
-                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
-            </div>
-            <div class="portfolio-card" data-category="marketing">
-                <div class="portfolio-img-box">
-                    <img src="8.jpeg" alt="Marketing 7">
-                </div>
-                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
-            </div>
-            <div class="portfolio-card" data-category="marketing">
-                <div class="portfolio-img-box">
-                    <img src="9.jpeg" alt="Marketing 8">
-                </div>
-                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
-            </div>
-            <div class="portfolio-card" data-category="marketing">
-                <div class="portfolio-img-box">
-                    <img src="10.jpeg" alt="Marketing 9">
-                </div>
-                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
-            </div>
-            <div class="portfolio-card" data-category="marketing">
-                <div class="portfolio-img-box">
-                    <img src="7.jpeg" alt="Marketing 10">
-                </div>
-                <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
-            </div>
-
-            <div class="portfolio-card" data-category="thumbnail">
-                <div class="portfolio-img-box yt-thumbnail">
-                    <img src="tm1.jpeg" alt="Thumb 1">
-                </div>
-                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
-            </div>
-            <div class="portfolio-card" data-category="thumbnail">
-                <div class="portfolio-img-box yt-thumbnail">
-                    <img src="tm2.jpeg" alt="Thumb 2">
-                </div>
-                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
-            </div>
-            <div class="portfolio-card" data-category="thumbnail">
-                <div class="portfolio-img-box yt-thumbnail">
-                    <img src="tm3.jpeg" alt="Thumb 3">
-                </div>
-                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
-            </div>
-            <div class="portfolio-card" data-category="thumbnail">
-                <div class="portfolio-img-box yt-thumbnail">
-                    <img src="tm4.jpeg" alt="Thumb 4">
-                </div>
-                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
-            </div>
-            <div class="portfolio-card" data-category="thumbnail">
-                <div class="portfolio-img-box yt-thumbnail">
-                    <img src="tm5.jpeg" alt="Thumb 5">
-                </div>
-                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
-            </div>
-            <div class="portfolio-card" data-category="thumbnail">
-                <div class="portfolio-img-box yt-thumbnail">
-                    <img src="tm6.jpeg" alt="Thumb 6">
-                </div>
-                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
-            </div>
-            <div class="portfolio-card" data-category="thumbnail">
-                <div class="portfolio-img-box yt-thumbnail">
-                    <img src="tm7.jpeg" alt="Thumb 7">
-                </div>
-                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
-            </div>
-            <div class="portfolio-card" data-category="thumbnail">
-                <div class="portfolio-img-box yt-thumbnail">
-                    <img src="tm8.jpeg" alt="Thumb 8">
-                </div>
-                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
-            </div>
-            <div class="portfolio-card" data-category="thumbnail">
-                <div class="portfolio-img-box yt-thumbnail">
-                    <img src="tm9.jpeg" alt="Thumb 9">
-                </div>
-                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
-            </div>
-            <div class="portfolio-card" data-category="thumbnail">
-                <div class="portfolio-img-box yt-thumbnail">
-                    <img src="tm10.jpeg" alt="Thumb 10">
-                </div>
-                <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
-            </div>
-
-            <div class="portfolio-card" data-category="product">
-                <div class="portfolio-img-box">
-                    <img src="ps1.jpeg" alt="Product 1">
-                </div>
-                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
-            </div>
-            <div class="portfolio-card" data-category="product">
-                <div class="portfolio-img-box">
-                    <img src="ps2.jpeg" alt="Product 2">
-                </div>
-                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
-            </div>
-            <div class="portfolio-card" data-category="product">
-                <div class="portfolio-img-box">
-                    <img src="ps3.jpeg" alt="Product 3">
-                </div>
-                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
-            </div>
-            <div class="portfolio-card" data-category="product">
-                <div class="portfolio-img-box">
-                    <img src="ps4.jpeg" alt="Product 4">
-                </div>
-                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
-            </div>
-            <div class="portfolio-card" data-category="product">
-                <div class="portfolio-img-box">
-                    <img src="ps5.jpeg" alt="Product 5">
-                </div>
-                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
-            </div>
-            <div class="portfolio-card" data-category="product">
-                <div class="portfolio-img-box">
-                    <img src="ps6.jpeg" alt="Product 6">
-                </div>
-                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
-            </div>
-            <div class="portfolio-card" data-category="product">
-                <div class="portfolio-img-box">
-                    <img src="ps7.jpeg" alt="Product 7">
-                </div>
-                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
-            </div>
-            <div class="portfolio-card" data-category="product">
-                <div class="portfolio-img-box">
-                    <img src="ps8.jpeg" alt="Product 8">
-                </div>
-                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
-            </div>
-            <div class="portfolio-card" data-category="product">
-                <div class="portfolio-img-box">
-                    <img src="ps9.jpeg" alt="Product 9">
-                </div>
-                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
-            </div>
-            <div class="portfolio-card" data-category="product">
-                <div class="portfolio-img-box">
-                    <img src="ps10.jpeg" alt="Product 10">
-                </div>
-                <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
-            </div>
-
+            <h2>Selected Work</h2>
+            <h2 style="color: #84ff00;">Built to Perform</h2>
         </div>
     </div>
+
+    
+    
+            <div class="portfolio-filter-btns">
+                <button class="filter-btn active" data-filter="logo">Logo Design</button>
+                <button class="filter-btn" data-filter="banner">Banner Design</button>
+                <button class="filter-btn" data-filter="photo-manipulation">Photo Manipulation</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="business-card">Business Card Design</button>
+                <button class="filter-btn" data-filter="typography">Typography Design</button>
+                <button class="filter-btn" data-filter="gym-post">Gym Post Design</button>
+                <button class="filter-btn" data-filter="education-post">Education Centre Post Designs</button>
+                <button class="filter-btn" data-filter="marketing">Digital Marketing Post</button>
+                <button class="filter-btn" data-filter="thumbnail">Thumbnail Design</button>
+                <button class="filter-btn" data-filter="product">Product Post Design</button>
+            </div>
+        </div>
+
+        <div class="portfolio-panels">
+            <div class="portfolio-panel active" data-panel="logo">
+                <div class="portfolio-grid">
+                    <div class="portfolio-card" data-category="logo">
+                        <div class="portfolio-img-box">
+                            <img src="logo1.jpeg" alt="Logo Design 1">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Logo Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="logo">
+                        <div class="portfolio-img-box">
+                            <img src="logo2.jpeg" alt="Logo Design 2">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Logo Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="logo">
+                        <div class="portfolio-img-box">
+                            <img src="logo3.jpeg" alt="Logo Design 3">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Logo Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="logo">
+                        <div class="portfolio-img-box">
+                            <img src="logo4.jpeg" alt="Logo Design 4">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Logo Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="logo">
+                        <div class="portfolio-img-box">
+                            <img src="logo5.jpeg" alt="Logo Design 5">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Logo Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="logo">
+                        <div class="portfolio-img-box">
+                            <img src="logo6.jpeg" alt="Logo Design 6">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Logo Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="logo">
+                        <div class="portfolio-img-box">
+                            <img src="logo7.jpeg" alt="Logo Design 7">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Logo Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="logo">
+                        <div class="portfolio-img-box">
+                            <img src="logo8.jpeg" alt="Logo Design 8">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Logo Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="logo">
+                        <div class="portfolio-img-box">
+                            <img src="logo9.jpeg" alt="Logo Design 9">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Logo Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="logo">
+                        <div class="portfolio-img-box">
+                            <img src="logo10.jpeg" alt="Logo Design 10">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Logo Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="logo">
+                        <div class="portfolio-img-box">
+                            <img src="logo11.jpeg" alt="Logo Design 11">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Logo Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="logo">
+                        <div class="portfolio-img-box">
+                            <img src="logo12.jpeg" alt="Logo Design 12">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Logo Design</span></div>
+                    </div>
+                </div>
+                <div class="portfolio-viewall-wrap">
+                    <button class="view-all-btn" type="button">View All</button>
+                </div>
+            </div>
+            <div class="portfolio-panel" data-panel="banner">
+                <div class="portfolio-grid">
+                    <div class="portfolio-card" data-category="banner">
+                        <div class="portfolio-img-box">
+                            <img src="banner1.jpeg" alt="Banner Design 1">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Banner Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="banner">
+                        <div class="portfolio-img-box">
+                            <img src="banner2.jpeg" alt="Banner Design 2">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Banner Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="banner">
+                        <div class="portfolio-img-box">
+                            <img src="banner3.jpeg" alt="Banner Design 3">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Banner Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="banner">
+                        <div class="portfolio-img-box">
+                            <img src="banner4.jpeg" alt="Banner Design 4">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Banner Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="banner">
+                        <div class="portfolio-img-box">
+                            <img src="banner5.jpeg" alt="Banner Design 5">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Banner Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="banner">
+                        <div class="portfolio-img-box">
+                            <img src="banner6.jpeg" alt="Banner Design 6">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Banner Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="banner">
+                        <div class="portfolio-img-box">
+                            <img src="banner7.jpeg" alt="Banner Design 7">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Banner Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="banner">
+                        <div class="portfolio-img-box">
+                            <img src="banner8.jpeg" alt="Banner Design 8">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Banner Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="banner">
+                        <div class="portfolio-img-box">
+                            <img src="banner9.jpeg" alt="Banner Design 9">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Banner Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="banner">
+                        <div class="portfolio-img-box">
+                            <img src="banner10.jpeg" alt="Banner Design 10">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Banner Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="banner">
+                        <div class="portfolio-img-box">
+                            <img src="banner11.jpeg" alt="Banner Design 11">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Banner Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="banner">
+                        <div class="portfolio-img-box">
+                            <img src="banner12.jpeg" alt="Banner Design 12">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Banner Design</span></div>
+                    </div>
+                </div>
+                <div class="portfolio-viewall-wrap">
+                    <button class="view-all-btn" type="button">View All</button>
+                </div>
+            </div>
+            <div class="portfolio-panel" data-panel="photo-manipulation">
+                <div class="portfolio-grid">
+                    <div class="portfolio-card" data-category="photo-manipulation">
+                        <div class="portfolio-img-box">
+                            <img src="photo-manip1.jpeg" alt="Photo Manipulation 1">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Photo Manipulation</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="photo-manipulation">
+                        <div class="portfolio-img-box">
+                            <img src="photo-manip2.jpeg" alt="Photo Manipulation 2">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Photo Manipulation</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="photo-manipulation">
+                        <div class="portfolio-img-box">
+                            <img src="photo-manip3.jpeg" alt="Photo Manipulation 3">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Photo Manipulation</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="photo-manipulation">
+                        <div class="portfolio-img-box">
+                            <img src="photo-manip4.jpeg" alt="Photo Manipulation 4">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Photo Manipulation</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="photo-manipulation">
+                        <div class="portfolio-img-box">
+                            <img src="photo-manip5.jpeg" alt="Photo Manipulation 5">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Photo Manipulation</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="photo-manipulation">
+                        <div class="portfolio-img-box">
+                            <img src="photo-manip6.jpeg" alt="Photo Manipulation 6">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Photo Manipulation</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="photo-manipulation">
+                        <div class="portfolio-img-box">
+                            <img src="photo-manip7.jpeg" alt="Photo Manipulation 7">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Photo Manipulation</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="photo-manipulation">
+                        <div class="portfolio-img-box">
+                            <img src="photo-manip8.jpeg" alt="Photo Manipulation 8">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Photo Manipulation</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="photo-manipulation">
+                        <div class="portfolio-img-box">
+                            <img src="photo-manip9.jpeg" alt="Photo Manipulation 9">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Photo Manipulation</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="photo-manipulation">
+                        <div class="portfolio-img-box">
+                            <img src="photo-manip10.jpeg" alt="Photo Manipulation 10">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Photo Manipulation</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="photo-manipulation">
+                        <div class="portfolio-img-box">
+                            <img src="photo-manip11.jpeg" alt="Photo Manipulation 11">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Photo Manipulation</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="photo-manipulation">
+                        <div class="portfolio-img-box">
+                            <img src="photo-manip12.jpeg" alt="Photo Manipulation 12">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Photo Manipulation</span></div>
+                    </div>
+                </div>
+                <div class="portfolio-viewall-wrap">
+                    <button class="view-all-btn" type="button">View All</button>
+                </div>
+            </div>
+            <div class="portfolio-panel" data-panel="branding">
+                <div class="portfolio-grid">
+                    <div class="portfolio-card" data-category="branding">
+                        <div class="portfolio-img-box">
+                            <img src="branding1.jpeg" alt="Branding 1">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Branding</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="branding">
+                        <div class="portfolio-img-box">
+                            <img src="branding2.jpeg" alt="Branding 2">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Branding</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="branding">
+                        <div class="portfolio-img-box">
+                            <img src="branding3.jpeg" alt="Branding 3">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Branding</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="branding">
+                        <div class="portfolio-img-box">
+                            <img src="branding4.jpeg" alt="Branding 4">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Branding</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="branding">
+                        <div class="portfolio-img-box">
+                            <img src="branding5.jpeg" alt="Branding 5">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Branding</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="branding">
+                        <div class="portfolio-img-box">
+                            <img src="branding6.jpeg" alt="Branding 6">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Branding</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="branding">
+                        <div class="portfolio-img-box">
+                            <img src="branding7.jpeg" alt="Branding 7">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Branding</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="branding">
+                        <div class="portfolio-img-box">
+                            <img src="branding8.jpeg" alt="Branding 8">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Branding</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="branding">
+                        <div class="portfolio-img-box">
+                            <img src="branding9.jpeg" alt="Branding 9">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Branding</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="branding">
+                        <div class="portfolio-img-box">
+                            <img src="branding10.jpeg" alt="Branding 10">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Branding</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="branding">
+                        <div class="portfolio-img-box">
+                            <img src="branding11.jpeg" alt="Branding 11">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Branding</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="branding">
+                        <div class="portfolio-img-box">
+                            <img src="branding12.jpeg" alt="Branding 12">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Branding</span></div>
+                    </div>
+                </div>
+                <div class="portfolio-viewall-wrap">
+                    <button class="view-all-btn" type="button">View All</button>
+                </div>
+            </div>
+            <div class="portfolio-panel" data-panel="business-card">
+                <div class="portfolio-grid">
+                    <div class="portfolio-card" data-category="business-card">
+                        <div class="portfolio-img-box">
+                            <img src="biz-card1.jpeg" alt="Business Card Design 1">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Business Card Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="business-card">
+                        <div class="portfolio-img-box">
+                            <img src="biz-card2.jpeg" alt="Business Card Design 2">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Business Card Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="business-card">
+                        <div class="portfolio-img-box">
+                            <img src="biz-card3.jpeg" alt="Business Card Design 3">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Business Card Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="business-card">
+                        <div class="portfolio-img-box">
+                            <img src="biz-card4.jpeg" alt="Business Card Design 4">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Business Card Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="business-card">
+                        <div class="portfolio-img-box">
+                            <img src="biz-card5.jpeg" alt="Business Card Design 5">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Business Card Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="business-card">
+                        <div class="portfolio-img-box">
+                            <img src="biz-card6.jpeg" alt="Business Card Design 6">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Business Card Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="business-card">
+                        <div class="portfolio-img-box">
+                            <img src="biz-card7.jpeg" alt="Business Card Design 7">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Business Card Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="business-card">
+                        <div class="portfolio-img-box">
+                            <img src="biz-card8.jpeg" alt="Business Card Design 8">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Business Card Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="business-card">
+                        <div class="portfolio-img-box">
+                            <img src="biz-card9.jpeg" alt="Business Card Design 9">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Business Card Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="business-card">
+                        <div class="portfolio-img-box">
+                            <img src="biz-card10.jpeg" alt="Business Card Design 10">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Business Card Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="business-card">
+                        <div class="portfolio-img-box">
+                            <img src="biz-card11.jpeg" alt="Business Card Design 11">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Business Card Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="business-card">
+                        <div class="portfolio-img-box">
+                            <img src="biz-card12.jpeg" alt="Business Card Design 12">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Business Card Design</span></div>
+                    </div>
+                </div>
+                <div class="portfolio-viewall-wrap">
+                    <button class="view-all-btn" type="button">View All</button>
+                </div>
+            </div>
+            <div class="portfolio-panel" data-panel="typography">
+                <div class="portfolio-grid">
+                    <div class="portfolio-card" data-category="typography">
+                        <div class="portfolio-img-box">
+                            <img src="typography1.jpeg" alt="Typography Design 1">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Typography Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="typography">
+                        <div class="portfolio-img-box">
+                            <img src="typography2.jpeg" alt="Typography Design 2">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Typography Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="typography">
+                        <div class="portfolio-img-box">
+                            <img src="typography3.jpeg" alt="Typography Design 3">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Typography Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="typography">
+                        <div class="portfolio-img-box">
+                            <img src="typography4.jpeg" alt="Typography Design 4">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Typography Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="typography">
+                        <div class="portfolio-img-box">
+                            <img src="typography5.jpeg" alt="Typography Design 5">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Typography Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="typography">
+                        <div class="portfolio-img-box">
+                            <img src="typography6.jpeg" alt="Typography Design 6">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Typography Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="typography">
+                        <div class="portfolio-img-box">
+                            <img src="typography7.jpeg" alt="Typography Design 7">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Typography Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="typography">
+                        <div class="portfolio-img-box">
+                            <img src="typography8.jpeg" alt="Typography Design 8">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Typography Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="typography">
+                        <div class="portfolio-img-box">
+                            <img src="typography9.jpeg" alt="Typography Design 9">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Typography Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="typography">
+                        <div class="portfolio-img-box">
+                            <img src="typography10.jpeg" alt="Typography Design 10">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Typography Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="typography">
+                        <div class="portfolio-img-box">
+                            <img src="typography11.jpeg" alt="Typography Design 11">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Typography Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="typography">
+                        <div class="portfolio-img-box">
+                            <img src="typography12.jpeg" alt="Typography Design 12">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Typography Design</span></div>
+                    </div>
+                </div>
+                <div class="portfolio-viewall-wrap">
+                    <button class="view-all-btn" type="button">View All</button>
+                </div>
+            </div>
+            <div class="portfolio-panel" data-panel="gym-post">
+                <div class="portfolio-grid">
+                    <div class="portfolio-card" data-category="gym-post">
+                        <div class="portfolio-img-box">
+                            <img src="gym-post1.jpeg" alt="Gym Post Design 1">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Gym Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="gym-post">
+                        <div class="portfolio-img-box">
+                            <img src="gym-post2.jpeg" alt="Gym Post Design 2">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Gym Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="gym-post">
+                        <div class="portfolio-img-box">
+                            <img src="gym-post3.jpeg" alt="Gym Post Design 3">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Gym Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="gym-post">
+                        <div class="portfolio-img-box">
+                            <img src="gym-post4.jpeg" alt="Gym Post Design 4">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Gym Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="gym-post">
+                        <div class="portfolio-img-box">
+                            <img src="gym-post5.jpeg" alt="Gym Post Design 5">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Gym Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="gym-post">
+                        <div class="portfolio-img-box">
+                            <img src="gym-post6.jpeg" alt="Gym Post Design 6">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Gym Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="gym-post">
+                        <div class="portfolio-img-box">
+                            <img src="gym-post7.jpeg" alt="Gym Post Design 7">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Gym Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="gym-post">
+                        <div class="portfolio-img-box">
+                            <img src="gym-post8.jpeg" alt="Gym Post Design 8">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Gym Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="gym-post">
+                        <div class="portfolio-img-box">
+                            <img src="gym-post9.jpeg" alt="Gym Post Design 9">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Gym Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="gym-post">
+                        <div class="portfolio-img-box">
+                            <img src="gym-post10.jpeg" alt="Gym Post Design 10">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Gym Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="gym-post">
+                        <div class="portfolio-img-box">
+                            <img src="gym-post11.jpeg" alt="Gym Post Design 11">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Gym Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="gym-post">
+                        <div class="portfolio-img-box">
+                            <img src="gym-post12.jpeg" alt="Gym Post Design 12">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Gym Post Design</span></div>
+                    </div>
+                </div>
+                <div class="portfolio-viewall-wrap">
+                    <button class="view-all-btn" type="button">View All</button>
+                </div>
+            </div>
+            <div class="portfolio-panel" data-panel="education-post">
+                <div class="portfolio-grid">
+                    <div class="portfolio-card" data-category="education-post">
+                        <div class="portfolio-img-box">
+                            <img src="edu-post1.jpeg" alt="Education Centre Post Designs 1">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Education Centre Post Designs</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="education-post">
+                        <div class="portfolio-img-box">
+                            <img src="edu-post2.jpeg" alt="Education Centre Post Designs 2">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Education Centre Post Designs</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="education-post">
+                        <div class="portfolio-img-box">
+                            <img src="edu-post3.jpeg" alt="Education Centre Post Designs 3">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Education Centre Post Designs</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="education-post">
+                        <div class="portfolio-img-box">
+                            <img src="edu-post4.jpeg" alt="Education Centre Post Designs 4">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Education Centre Post Designs</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="education-post">
+                        <div class="portfolio-img-box">
+                            <img src="edu-post5.jpeg" alt="Education Centre Post Designs 5">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Education Centre Post Designs</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="education-post">
+                        <div class="portfolio-img-box">
+                            <img src="edu-post6.jpeg" alt="Education Centre Post Designs 6">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Education Centre Post Designs</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="education-post">
+                        <div class="portfolio-img-box">
+                            <img src="edu-post7.jpeg" alt="Education Centre Post Designs 7">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Education Centre Post Designs</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="education-post">
+                        <div class="portfolio-img-box">
+                            <img src="edu-post8.jpeg" alt="Education Centre Post Designs 8">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Education Centre Post Designs</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="education-post">
+                        <div class="portfolio-img-box">
+                            <img src="edu-post9.jpeg" alt="Education Centre Post Designs 9">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Education Centre Post Designs</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="education-post">
+                        <div class="portfolio-img-box">
+                            <img src="edu-post10.jpeg" alt="Education Centre Post Designs 10">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Education Centre Post Designs</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="education-post">
+                        <div class="portfolio-img-box">
+                            <img src="edu-post11.jpeg" alt="Education Centre Post Designs 11">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Education Centre Post Designs</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="education-post">
+                        <div class="portfolio-img-box">
+                            <img src="edu-post12.jpeg" alt="Education Centre Post Designs 12">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Education Centre Post Designs</span></div>
+                    </div>
+                </div>
+                <div class="portfolio-viewall-wrap">
+                    <button class="view-all-btn" type="button">View All</button>
+                </div>
+            </div>
+            <div class="portfolio-panel" data-panel="marketing">
+                <div class="portfolio-grid">
+                    <div class="portfolio-card" data-category="marketing">
+                        <div class="portfolio-img-box">
+                            <img src="1.jpeg" alt="Digital Marketing Post 1">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="marketing">
+                        <div class="portfolio-img-box">
+                            <img src="2.jpeg" alt="Digital Marketing Post 2">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="marketing">
+                        <div class="portfolio-img-box">
+                            <img src="3.jpeg" alt="Digital Marketing Post 3">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="marketing">
+                        <div class="portfolio-img-box">
+                            <img src="4.jpeg" alt="Digital Marketing Post 4">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="marketing">
+                        <div class="portfolio-img-box">
+                            <img src="5.jpeg" alt="Digital Marketing Post 5">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="marketing">
+                        <div class="portfolio-img-box">
+                            <img src="6.jpeg" alt="Digital Marketing Post 6">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="marketing">
+                        <div class="portfolio-img-box">
+                            <img src="7.jpeg" alt="Digital Marketing Post 7">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="marketing">
+                        <div class="portfolio-img-box">
+                            <img src="8.jpeg" alt="Digital Marketing Post 8">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="marketing">
+                        <div class="portfolio-img-box">
+                            <img src="9.jpeg" alt="Digital Marketing Post 9">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="marketing">
+                        <div class="portfolio-img-box">
+                            <img src="10.jpeg" alt="Digital Marketing Post 10">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="marketing">
+                        <div class="portfolio-img-box">
+                            <img src="11.jpeg" alt="Digital Marketing Post 11">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="marketing">
+                        <div class="portfolio-img-box">
+                            <img src="12.jpeg" alt="Digital Marketing Post 12">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Digital Marketing Post</span></div>
+                    </div>
+                </div>
+                <div class="portfolio-viewall-wrap">
+                    <button class="view-all-btn" type="button">View All</button>
+                </div>
+            </div>
+            <div class="portfolio-panel" data-panel="thumbnail">
+                <div class="portfolio-grid">
+                    <div class="portfolio-card" data-category="thumbnail">
+                        <div class="portfolio-img-box yt-thumbnail">
+                            <img src="tm1.jpeg" alt="Thumbnail Design 1">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="thumbnail">
+                        <div class="portfolio-img-box yt-thumbnail">
+                            <img src="tm2.jpeg" alt="Thumbnail Design 2">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="thumbnail">
+                        <div class="portfolio-img-box yt-thumbnail">
+                            <img src="tm3.jpeg" alt="Thumbnail Design 3">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="thumbnail">
+                        <div class="portfolio-img-box yt-thumbnail">
+                            <img src="tm4.jpeg" alt="Thumbnail Design 4">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="thumbnail">
+                        <div class="portfolio-img-box yt-thumbnail">
+                            <img src="tm5.jpeg" alt="Thumbnail Design 5">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="thumbnail">
+                        <div class="portfolio-img-box yt-thumbnail">
+                            <img src="tm6.jpeg" alt="Thumbnail Design 6">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="thumbnail">
+                        <div class="portfolio-img-box yt-thumbnail">
+                            <img src="tm7.jpeg" alt="Thumbnail Design 7">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="thumbnail">
+                        <div class="portfolio-img-box yt-thumbnail">
+                            <img src="tm8.jpeg" alt="Thumbnail Design 8">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="thumbnail">
+                        <div class="portfolio-img-box yt-thumbnail">
+                            <img src="tm9.jpeg" alt="Thumbnail Design 9">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="thumbnail">
+                        <div class="portfolio-img-box yt-thumbnail">
+                            <img src="tm10.jpeg" alt="Thumbnail Design 10">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="thumbnail">
+                        <div class="portfolio-img-box yt-thumbnail">
+                            <img src="tm11.jpeg" alt="Thumbnail Design 11">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="thumbnail">
+                        <div class="portfolio-img-box yt-thumbnail">
+                            <img src="tm12.jpeg" alt="Thumbnail Design 12">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Thumbnail Design</span></div>
+                    </div>
+                </div>
+                <div class="portfolio-viewall-wrap">
+                    <button class="view-all-btn" type="button">View All</button>
+                </div>
+            </div>
+            <div class="portfolio-panel" data-panel="product">
+                <div class="portfolio-grid">
+                    <div class="portfolio-card" data-category="product">
+                        <div class="portfolio-img-box">
+                            <img src="ps1.jpeg" alt="Product Post Design 1">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="product">
+                        <div class="portfolio-img-box">
+                            <img src="ps2.jpeg" alt="Product Post Design 2">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="product">
+                        <div class="portfolio-img-box">
+                            <img src="ps3.jpeg" alt="Product Post Design 3">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="product">
+                        <div class="portfolio-img-box">
+                            <img src="ps4.jpeg" alt="Product Post Design 4">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="product">
+                        <div class="portfolio-img-box">
+                            <img src="ps5.jpeg" alt="Product Post Design 5">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card" data-category="product">
+                        <div class="portfolio-img-box">
+                            <img src="ps6.jpeg" alt="Product Post Design 6">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="product">
+                        <div class="portfolio-img-box">
+                            <img src="ps7.jpeg" alt="Product Post Design 7">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="product">
+                        <div class="portfolio-img-box">
+                            <img src="ps8.jpeg" alt="Product Post Design 8">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="product">
+                        <div class="portfolio-img-box">
+                            <img src="ps9.jpeg" alt="Product Post Design 9">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="product">
+                        <div class="portfolio-img-box">
+                            <img src="ps10.jpeg" alt="Product Post Design 10">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="product">
+                        <div class="portfolio-img-box">
+                            <img src="ps11.jpeg" alt="Product Post Design 11">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+                    </div>
+                    <div class="portfolio-card extra-card" data-category="product">
+                        <div class="portfolio-img-box">
+                            <img src="ps12.jpeg" alt="Product Post Design 12">
+                        </div>
+                        <div class="portfolio-mini-footer"><span>Product Post Design</span></div>
+                    </div>
+                </div>
+                <div class="portfolio-viewall-wrap">
+                    <button class="view-all-btn" type="button">View All</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </section>
+
+<div id="portfolioImgModal" class="portfolio-img-modal">
+    <div class="portfolio-img-modal-inner">
+        <img id="portfolioImgModalImg" src="" alt="Portfolio preview">
+    </div>
+</div>
 
 <style>
 /* --- Portfolio Section Styling --- */
@@ -3803,7 +4549,7 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 
 .portfolio-header h2 {
-    color: #ffffff;
+    color: #84ff00;
     font-size: 2.5rem;
     font-weight: 700;
     margin-top: 10px;
@@ -3819,26 +4565,38 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 
 .filter-btn {
-    background: #111111;
-    color: #94a3b8;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #84ff00;
+    color: #000000;
+    border: 1px solid #84ff00;
     padding: 10px 22px;
     border-radius: 30px;
-    font-weight: 600;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.8rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .filter-btn:hover, .filter-btn.active {
-    background: #4c961b;
-    color: #ffffff;
-    border-color: #4c961b;
+    background: #000000;
+    color: #84ff00;
+    border-color: #84ff00;
+}
+
+/* Tab Panels */
+.portfolio-panel {
+    display: none;
+}
+
+.portfolio-panel.active {
+    display: block;
 }
 
 /* Grid Design */
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -3848,12 +4606,21 @@ document.addEventListener("DOMContentLoaded", function () {
     border-radius: 12px;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
     transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.portfolio-card.extra-card {
+    display: none;
+}
+
+.portfolio-panel.expanded .portfolio-card.extra-card {
+    display: block;
 }
 
 .portfolio-card:hover {
     transform: translateY(-5px);
-    border-color: #4c961b;
+    border-color: #84ff00;
 }
 
 /* Default Box Ratio (4:3) for other cards */
@@ -3872,7 +4639,7 @@ document.addEventListener("DOMContentLoaded", function () {
 .portfolio-img-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Agar cut nahi chahiye toh 'contain' kar sakte hain */
+    object-fit: cover;
     display: block;
     transition: transform 0.4s ease;
 }
@@ -3896,6 +4663,62 @@ document.addEventListener("DOMContentLoaded", function () {
     letter-spacing: 1px;
 }
 
+/* View All button */
+.portfolio-viewall-wrap {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.view-all-btn {
+    background: transparent;
+    color: #84ff00;
+    border: 1px solid #84ff00;
+    padding: 12px 32px;
+    border-radius: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background: #84ff00;
+    color: #000000;
+}
+
+/* Portfolio Image Popup Modal */
+.portfolio-img-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(8px);
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-img-modal.active {
+    display: flex;
+}
+
+.portfolio-img-modal-inner {
+    max-width: 85vw;
+    max-height: 85vh;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(132, 255, 0, 0.4);
+}
+
+.portfolio-img-modal-inner img {
+    display: block;
+    max-width: 85vw;
+    max-height: 85vh;
+    object-fit: contain;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
     .portfolio-grid {
@@ -3903,9 +4726,56 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 }
 
+@media (max-width: 768px) {
+    .portfolio-header h2 {
+        font-size: 1.9rem;
+    }
+
+    /* Turn the 11 category tabs into a swipeable horizontal row
+       instead of wrapping into many crowded lines on phones */
+    .portfolio-filter-btns {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        padding-bottom: 4px;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .portfolio-filter-btns::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter-btn {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        padding: 9px 18px;
+        font-size: 0.72rem;
+    }
+
+    .portfolio-viewall-wrap {
+        margin-top: 22px;
+    }
+}
+
 @media (max-width: 576px) {
     .portfolio-grid {
         grid-template-columns: 1fr;
+    }
+
+    .portfolio-img-modal-inner {
+        max-width: 92vw;
+        max-height: 80vh;
+    }
+
+    .portfolio-img-modal-inner img {
+        max-width: 92vw;
+        max-height: 80vh;
     }
 }
 </style>
@@ -3913,7 +4783,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const filterBtns = document.querySelectorAll(".filter-btn");
-    const portfolioCards = document.querySelectorAll(".portfolio-card");
+    const panels = document.querySelectorAll(".portfolio-panel");
 
     filterBtns.forEach(btn => {
         btn.addEventListener("click", function () {
@@ -3922,20 +4792,63 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const filterValue = this.getAttribute("data-filter");
 
-            portfolioCards.forEach(card => {
-                if (filterValue === "all" || card.getAttribute("data-category") === filterValue) {
-                    card.style.display = "block";
+            panels.forEach(panel => {
+                if (panel.getAttribute("data-panel") === filterValue) {
+                    panel.classList.add("active");
                 } else {
-                    card.style.display = "none";
+                    panel.classList.remove("active");
+                    panel.classList.remove("expanded");
+                    const vb = panel.querySelector(".view-all-btn");
+                    if (vb) vb.textContent = "View All";
                 }
             });
         });
     });
+
+    // View All / Show Less toggle per tab
+    document.querySelectorAll(".view-all-btn").forEach(btn => {
+        btn.addEventListener("click", function () {
+            const panel = this.closest(".portfolio-panel");
+            panel.classList.toggle("expanded");
+            this.textContent = panel.classList.contains("expanded") ? "Show Less" : "View All";
+        });
+    });
+
+    // Click a card to preview its image; moving the cursor away closes it
+    const imgModal = document.getElementById("portfolioImgModal");
+    const imgModalInner = document.querySelector(".portfolio-img-modal-inner");
+    const imgModalImg = document.getElementById("portfolioImgModalImg");
+
+    document.querySelectorAll(".portfolio-card").forEach(card => {
+        card.addEventListener("click", function () {
+            const img = this.querySelector("img");
+            if (!img) return;
+            imgModalImg.src = img.getAttribute("src");
+            imgModalImg.alt = img.getAttribute("alt") || "Portfolio preview";
+            imgModal.classList.add("active");
+        });
+    });
+
+    function closeImgModal() {
+        imgModal.classList.remove("active");
+        imgModalImg.src = "";
+    }
+
+    // Close as soon as the cursor leaves the enlarged image
+    imgModalInner.addEventListener("mouseleave", closeImgModal);
+    // Also close on backdrop click / Escape as a fallback
+    imgModal.addEventListener("click", function (e) {
+        if (e.target === imgModal) closeImgModal();
+    });
+    document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeImgModal();
+    });
 });
-</script>    
+</script>
+
 <section id="fresh-videos" class="fresh-video-section">
     <div class="fresh-container">
-        
+
         <div class="fresh-title-wrap">
             <div class="section-badge">
                 <span class="badge-line"></span> Cinematic Motion <span class="badge-line"></span>
@@ -3944,37 +4857,81 @@ document.addEventListener("DOMContentLoaded", function () {
             <p>Immersive visual stories crafted with cutting-edge motion production.</p>
         </div>
 
-        <div class="fresh-grid fresh-grid-row4">
-            <div class="fresh-row fresh-row-4up">
-                
-                <div class="fresh-video-box" data-video-src="WhatsApp Video 2026-04-16 at 5.28.29 AM.mp4">
-                    <video muted loop playsinline class="fresh-bg-video">
-                        <source src="WhatsApp Video 2026-04-16 at 5.28.29 AM.mp4" type="video/mp4">
+        <div class="vid-slider">
+            <div class="vid-slider-track">
+                <div class="vid-slide-box" data-video-src="video 1 .mp4">
+                    <video muted loop autoplay playsinline class="vid-slide-media">
+                        <source src="video 1 .mp4" type="video/mp4">
                     </video>
-                    <div class="fresh-play-overlay"><i class="fa-solid fa-play"></i></div>
+                    <div class="vid-slide-play"><i class="fa-solid fa-pause"></i></div>
                 </div>
-
-                <div class="fresh-video-box" data-video-src="1.mp4">
-                    <video muted loop playsinline class="fresh-bg-video">
-                        <source src="1.mp4" type="video/mp4">
+                <div class="vid-slide-box" data-video-src="video 2 .mp4">
+                    <video muted loop autoplay playsinline class="vid-slide-media">
+                        <source src="video 2 .mp4" type="video/mp4">
                     </video>
-                    <div class="fresh-play-overlay"><i class="fa-solid fa-play"></i></div>
+                    <div class="vid-slide-play"><i class="fa-solid fa-pause"></i></div>
                 </div>
-
-                <div class="fresh-video-box" data-video-src="REEL 34.mp4">
-                    <video muted loop playsinline class="fresh-bg-video">
-                        <source src="REEL 34.mp4" type="video/mp4">
+                <div class="vid-slide-box" data-video-src="video 3.mp4">
+                    <video muted loop autoplay playsinline class="vid-slide-media">
+                        <source src="video 3.mp4" type="video/mp4">
                     </video>
-                    <div class="fresh-play-overlay"><i class="fa-solid fa-play"></i></div>
+                    <div class="vid-slide-play"><i class="fa-solid fa-pause"></i></div>
                 </div>
-
-                <div class="fresh-video-box" data-video-src="0508123123.mp4">
-                    <video muted loop playsinline class="fresh-bg-video">
-                        <source src="0508123123.mp4" type="video/mp4">
+                <div class="vid-slide-box" data-video-src="video 4.mp4">
+                    <video muted loop autoplay playsinline class="vid-slide-media">
+                        <source src="video 4.mp4" type="video/mp4">
                     </video>
-                    <div class="fresh-play-overlay"><i class="fa-solid fa-play"></i></div>
+                    <div class="vid-slide-play"><i class="fa-solid fa-pause"></i></div>
                 </div>
-
+                <div class="vid-slide-box" data-video-src="video 5 .mp4">
+                    <video muted loop autoplay playsinline class="vid-slide-media">
+                        <source src="video 5 .mp4" type="video/mp4">
+                    </video>
+                    <div class="vid-slide-play"><i class="fa-solid fa-pause"></i></div>
+                </div>
+                <div class="vid-slide-box" data-video-src="vidoe6.mp4">
+                    <video muted loop autoplay playsinline class="vid-slide-media">
+                        <source src="vidoe6.mp4" type="video/mp4">
+                    </video>
+                    <div class="vid-slide-play"><i class="fa-solid fa-pause"></i></div>
+                </div>
+                <!-- duplicate set for seamless loop -->
+                <div class="vid-slide-box" data-video-src="video 1 .mp4">
+                    <video muted loop autoplay playsinline class="vid-slide-media">
+                        <source src="video 1 .mp4" type="video/mp4">
+                    </video>
+                    <div class="vid-slide-play"><i class="fa-solid fa-pause"></i></div>
+                </div>
+                <div class="vid-slide-box" data-video-src="video 2 .mp4">
+                    <video muted loop autoplay playsinline class="vid-slide-media">
+                        <source src="video 2 .mp4" type="video/mp4">
+                    </video>
+                    <div class="vid-slide-play"><i class="fa-solid fa-pause"></i></div>
+                </div>
+                <div class="vid-slide-box" data-video-src="video 3.mp4">
+                    <video muted loop autoplay playsinline class="vid-slide-media">
+                        <source src="video 3.mp4" type="video/mp4">
+                    </video>
+                    <div class="vid-slide-play"><i class="fa-solid fa-pause"></i></div>
+                </div>
+                <div class="vid-slide-box" data-video-src="video 4.mp4">
+                    <video muted loop autoplay playsinline class="vid-slide-media">
+                        <source src="video 4.mp4" type="video/mp4">
+                    </video>
+                    <div class="vid-slide-play"><i class="fa-solid fa-pause"></i></div>
+                </div>
+                <div class="vid-slide-box" data-video-src="video 5 .mp4">
+                    <video muted loop autoplay playsinline class="vid-slide-media">
+                        <source src="video 5 .mp4" type="video/mp4">
+                    </video>
+                    <div class="vid-slide-play"><i class="fa-solid fa-pause"></i></div>
+                </div>
+                <div class="vid-slide-box" data-video-src="vidoe6.mp4">
+                    <video muted loop autoplay playsinline class="vid-slide-media">
+                        <source src="vidoe6.mp4" type="video/mp4">
+                    </video>
+                    <div class="vid-slide-play"><i class="fa-solid fa-pause"></i></div>
+                </div>
                 
             </div>
         </div>
@@ -3996,7 +4953,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 
 <style>
-/* --- Video Section Styling --- */
+/* --- Video Section Styling (slider, like the Partners logos section) --- */
 .fresh-video-section {
   padding: 80px 0;
   background-color: #000000;
@@ -4044,67 +5001,90 @@ document.addEventListener("DOMContentLoaded", function () {
   font-size: 1.1rem;
 }
 
-.fresh-row-4up {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.fresh-video-box {
+/* Slider (marquee), same technique as the Partners logos slider */
+.vid-slider {
   position: relative;
   width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+}
+
+.vid-slider-track {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: max-content;
+  animation: vidSliderScroll 30s linear infinite;
+}
+
+.vid-slider:hover .vid-slider-track {
+  animation-play-state: paused;
+}
+
+@keyframes vidSliderScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.vid-slide-box {
+  position: relative;
+  width: 180px;
   aspect-ratio: 9 / 16;
   border-radius: 12px;
   overflow: hidden;
   background: #111111;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.fresh-video-box:hover {
+.vid-slide-box:hover {
   transform: translateY(-5px);
   border-color: #4c961b;
 }
 
-.fresh-bg-video {
+.vid-slide-media {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.fresh-play-overlay {
+.vid-slide-play {
   position: absolute;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.4);
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-}
-
-.fresh-video-box:hover .fresh-play-overlay {
+  background: transparent;
   opacity: 1;
-  background: rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+  pointer-events: none;
 }
 
-.fresh-play-overlay i {
+.vid-slide-box:hover .vid-slide-play {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.vid-slide-play i {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   background: #4c961b;
-  width: 55px;
-  height: 55px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   box-shadow: 0 4px 15px rgba(76, 150, 27, 0.4);
   transition: transform 0.3s ease;
+  cursor: pointer;
+  pointer-events: auto;
 }
 
-.fresh-video-box:hover .fresh-play-overlay i {
+.vid-slide-box:hover .vid-slide-play i {
   transform: scale(1.1);
 }
 
@@ -4181,15 +5161,18 @@ document.addEventListener("DOMContentLoaded", function () {
   color: #4c961b;
 }
 
-@media (max-width: 992px) {
-  .fresh-row-4up {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 768px) {
+  .fresh-video-section {
+    padding: 50px 0;
+  }
+  .fresh-title-wrap {
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 576px) {
-  .fresh-row-4up {
-    grid-template-columns: 1fr;
+  .vid-slide-box {
+    width: 140px;
   }
   .fresh-title-wrap h2 {
     font-size: 2rem;
@@ -4199,27 +5182,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const videoBoxes = document.querySelectorAll(".fresh-video-box");
+  const videoBoxes = document.querySelectorAll(".vid-slide-box");
   const modal = document.getElementById("videoPopupModal");
   const popupVideo = document.getElementById("popupVideoPlayer");
   const closeBtn = document.querySelector(".popup-close-btn");
 
-  // Check background videos for any loading errors
-  document.querySelectorAll(".fresh-bg-video").forEach(vid => {
+  document.querySelectorAll(".vid-slide-media").forEach(vid => {
     vid.addEventListener("error", function(e) {
       console.error("Video failed to load file:", vid.querySelector("source").getAttribute("src"), e);
     });
+    // Make sure every slider preview starts auto-playing (muted, looping)
+    vid.play().catch(() => {});
+    vid.addEventListener("loadedmetadata", () => vid.play().catch(() => {}));
   });
 
-  // Open Popup and Play Video with Sound on Click
+  // Pause/play icon toggles that one video in place, without opening the popup
+  document.querySelectorAll(".vid-slide-box").forEach(box => {
+    const media = box.querySelector(".vid-slide-media");
+    const icon = box.querySelector(".vid-slide-play i");
+    if (!media || !icon) return;
+
+    icon.addEventListener("click", function (e) {
+      e.stopPropagation();
+      if (media.paused) {
+        media.play().catch(() => {});
+        icon.classList.remove("fa-play");
+        icon.classList.add("fa-pause");
+      } else {
+        media.pause();
+        icon.classList.remove("fa-pause");
+        icon.classList.add("fa-play");
+      }
+    });
+  });
+
   videoBoxes.forEach(box => {
     box.addEventListener("click", function () {
       const videoSrc = this.getAttribute("data-video-src");
       if (videoSrc) {
         popupVideo.src = videoSrc;
         modal.classList.add("active");
-        popupVideo.muted = false; // Enable sound in popup
-        
+        popupVideo.muted = false;
+
         let playPromise = popupVideo.play();
         if (playPromise !== undefined) {
           playPromise.catch(error => {
@@ -4230,7 +5234,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Close Popup Function
   function closePopup() {
     modal.classList.remove("active");
     popupVideo.pause();
@@ -4253,6 +5256,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
+
 <!-- =========================================================
      PARTNERS / BRANDS LOGO SLIDER SECTION
 ========================================================= -->
@@ -4276,6 +5280,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="partner-logo"><img src="EXEEO.png" alt="Partner 6"></div>
                 <div class="partner-logo"><img src="HINO.png" alt="Partner 7"></div>
                 <div class="partner-logo"><img src="transparent-Photoroom (1).png" alt="Partner 8"></div>
+                <div class="partner-logo"><img src="faysal-bank-logo (1).png" alt="Partner 7"></div>
+                <div class="partner-logo"><img src="elodora.png" alt="Partner 8"></div>
+               
                 <!-- duplicate set for seamless loop -->
                 <div class="partner-logo"><img src="KFC.png" alt="Partner 1"></div>
                 <div class="partner-logo"><img src="snickers_PNG13920.png" alt="Partner 2"></div>
@@ -4285,6 +5292,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="partner-logo"><img src="EXEEO.png" alt="Partner 6"></div>
                 <div class="partner-logo"><img src="HINO.png" alt="Partner 7"></div>
                 <div class="partner-logo"><img src="transparent-Photoroom (1).png" alt="Partner 8"></div>
+                <div class="partner-logo"><img src="faysal-bank-logo (1).png" alt="Partner 7"></div>
+                <div class="partner-logo"><img src="elodora.png" alt="Partner 8"></div>
                
             </div>
         </div>
@@ -4313,7 +5322,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
             </div>
             <div class="skill-bar">
-                <div class="skill-info"><span>Cap Cat Pro</span> <span>60%</span></div>
+                <div class="skill-info"><span>Cap Cut Pro</span> <span>60%</span></div>
                 <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
             </div>
             
@@ -5065,10 +6074,12 @@ window.addEventListener('scroll', () => {
 </script>
 
     <footer>
-        <div class="footer-logo-area">
-            <img src="1231 (1) (1).png" alt="Kashan Logo" class="footer-logo-img">
-            <span class="logo-text">KASHAN</span>
-        </div>
+       <a href="#home" class="logo-link">
+    <div class="logo">
+        <img src="1231 (1) (1).png" alt="Kashan Logo" class="logo-img" id="logoImg">
+        <span class="logo-text">KASHAN</span>
+    </div>
+</a>
         <nav class="footer-nav">
             <ul>
                 <li><a href="#home">Home</a></li>
